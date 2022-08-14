@@ -11,11 +11,19 @@ header {
   grid-template-columns: repeat(3, 1fr);
   border: 2px groove rgb(137, 137, 223);
 }
+/* SCORES CONTAINERS */
 .scoreContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  justify-content:space-around;
+  align-items: center;
 }
+.avatar img {
+  height: 200px;
+  border-radius: 5px;
+
+  border: solid 3px rgb(104, 104, 154);
+}
+.avatar{display:flex;justify-content:center}
 .playerTitle {
   display: flex;
   justify-content: center;
@@ -26,15 +34,19 @@ header {
   font-weight: 900;
   font-size: 10rem;
 }
-.gameBoard {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 4px;
-  height: 30rem;
-  width: 30rem;
+.topBottomContainer{
+    background-color:rgb(136, 66, 66);
+    color:white;
 }
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
 
+  background-color: rgb(254, 254, 211);
+  width:400px;
+
+}
+/* MIDDLE CONTAINER */
 .middleContainer {
   display: flex;
 
@@ -42,9 +54,20 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+.gameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 4px;
+  /* height: 30rem;
+  width: 30rem; */
+}
+
 .cells {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+  cursor: pointer;
 }
