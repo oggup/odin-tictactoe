@@ -10,7 +10,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-top: 2px groove rgb(137, 137, 223);
-  padding-top:30px;
+  padding-top: 30px;
 }
 /* SCORES CONTAINERS */
 .scoreContainer {
@@ -19,14 +19,15 @@ header {
   align-items: center;
 }
 .avatar img {
-  height: 200px;
-  border: solid 1px rgb(104, 104, 154);
- ;
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  /* border: solid 1px rgb(104, 104, 154); */
 }
 .avatar {
   display: grid;
   flex-direction: column;
-  border: solid 3px rgb(104, 104, 154);
+  border: solid 1px rgb(104, 104, 154);
   border-radius: 4px;
 }
 .playerTitle {
