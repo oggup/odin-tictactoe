@@ -24,26 +24,5 @@ let createPlayer = (playerName, playerNumber, assignedXO) => {
   return { getPlayerName, playerName, playerNumber, assignedXO };
 };
 
-// let renderArrayToScreenModule = (function () {
-//   const gridBoxes = document.querySelectorAll(".cells");
-//   gridBoxes[0].textContent = gameBoardModule.gameBoard;
-//   console.log(
-//     `array as seen inside of renderArraytoScreenModule, ${gameBoardModule.gameBoard} `
-//   );
-//   console.log(
-//     `node list of gridboxes as seen inside of renderArraytoScreenModule `,
-//     gridBoxes
-//   );
-//   return {};
-// })();
-
 let Rakk = createPlayer("Rakk", 1, "X");
 let Papaya = createPlayer("Papaya", 2, "O");
-
-// let cells = document.querySelectorAll(".cells");
-
-// cells.forEach((cell) => {
-//   cell.addEventListener("click", (e) => {
-//     console.log(cell.id);
-//   });
-// });
